@@ -1,0 +1,1 @@
+<footer><br/><strong>&copy;Thierry Legros - <?php echo date("Y"); ?></strong></footer>

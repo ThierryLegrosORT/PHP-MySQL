@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    
+<?php require_once("header.php"); ?>
+    <?php require_once("menu.php"); ?>
     <h2>Page de test</h2>
 
     <p>Cette page contient du code HTML avec des balises PHP.<br />
@@ -28,7 +31,7 @@
 <!-- <?php
 phpinfo();
 ?> -->
-
+<?php require_once("footer.php"); ?>
 </body>
 
 </html>

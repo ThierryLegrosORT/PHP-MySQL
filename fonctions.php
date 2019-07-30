@@ -1,4 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
 <?php
+require_once("header.php");
+require_once("menu.php");
+
 
 $phrase = "Bonjour je suis une phrase... et je fais parti d'un paragraphe!";
 $nombreDeCara = strlen($phrase); //retourne le nombre de caracteres present dans la chaine
@@ -49,3 +62,6 @@ echo 'Bonjour ! Nous sommes le ' . $jour . '/' . $mois . '/' . $annee . ' et il 
 
 echo "<br><br>Voir les fonctions session_start() et setcookie()<br>qui envoient des header toutes seules...";
 ?>
+    <?php require_once("footer.php"); ?>
+    </body>
+</html>
