@@ -8,7 +8,7 @@
             <li><a href="/boucles.php">Les boucles</a></li>
             <li><a href="/tableaux.php">Les tableaux</a></li>
             <li><a href="/fonctions.php">Les fonctions</a></li>
-            <!-- <li><a href="/inclure.php">Inclure des portions de page</a></li> -->
+            <li><a href="/transmettredata.php">Transmettre des données</a></li>
     
         </ul>
     </div>
