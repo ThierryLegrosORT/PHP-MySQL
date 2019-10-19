@@ -1,0 +1,120 @@
+body{
+  padding: 0px;
+}
+
+nav {
+  width: 100%;
+  background-color: #424558;
+  position: relative;
+  margin-top: 20px;
+}
+
+nav > ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav > ul > li:hover {
+  font-weight: bold;
+}
+
+nav > ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav > ul > li {
+  float: left;
+  position: relative;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+
+.tp {
+  background-color: rgb(25, 0, 255);
+}
+
+.creations {
+  background-color: rgb(23, 139, 0);
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: #fff;
+}
+
+nav li:hover .submenu {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 100000;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu li {
+  border-bottom: 1px solid #999;
+}
+
+.submenu li a {
+  padding: 15px 30px;
+  font-size: 13px;
+  color: #222538;
+  width: 270px;
+}
+
+.submenu li:hover a {
+  color: #eee;
+  font-weight: bold;
+}
+
+.menu-divers:hover {
+  background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-divers .submenu {
+  background-color: rgb(228, 77, 38);
+}
+
+.menu-html:hover {
+  background-color: rgba(38, 228, 54, 0.15);
+}
+
+.menu-html .submenu {
+  background-color: rgb(38, 228, 54);
+}
+
+.menu-php:hover {
+  background-color: rgba(184, 38, 228, 0.15);
+}
+
+.menu-php .submenu {
+  background-color: rgb(184, 38, 228);
+}
+.menu-css:hover {
+  background-color: rgba(228, 184, 38, 0.15);
+}
+
+.menu-css .submenu {
+  background-color: rgb(228, 184, 38);
+}
+.menu-contact:hover {
+  background-color: rgba(38, 127, 228, 0.15);
+}
+
+.menu-contact .submenu {
+  background-color: rgb(38, 127, 228);
+}
