@@ -27,6 +27,7 @@
                     <li><a href="/send_files.php">Envoie de fichier par formulaire</a></li>
                     <li><a href="/login.php">Page protégée par mot de passe</a></li>
                     <li><a href="/variables_superglobales.php">Superglobales</a></li>
+                    <li><a href="/session.php">Sessions & Cookies</a></li>
                 </ul>
             </li>
     
