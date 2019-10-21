@@ -3,3 +3,9 @@ max-width: 100%;
 margin-left: 20px;
 margin-right: 20px;
 }
+li.superglobales{
+    font-style: italic;
+    font-weight: bold;
+    color: blueviolet;
+    margin-top: 10px;
+}
