@@ -28,6 +28,7 @@
                     <li><a href="/login.php">Page protégée par mot de passe</a></li>
                     <li><a href="/variables_superglobales.php">Superglobales</a></li>
                     <li><a href="/session.php">Sessions & Cookies</a></li>
+                    <li><a href="/persistance_data_file_chmod.php">Persistance dans un fichier avec CHMOD</a></li>
                 </ul>
             </li>
     
