@@ -27,11 +27,16 @@ et maintenant la même avec str_shuffle() :<br>" . $phraseMelangee . "<br><br>";
 
 echo "date(): <br>et passer les param.<br>";
 echo date("d") . " pour date('d') qui indique le num du jour dans le mois.<br>";
+echo date('M') . " pour date('M') qui indique le mois en 3 lettres.<br />";
+echo date('m') . " pour date('m') qui indique le num du mois.<br />";
 echo date("y") . " pour date('y') qui indique les 2 derniers digit de l'année en cours.<br>";
-echo date("Y") . " pour date('Y') qui indique l'année en cours.<br><br>";
+echo date("Y") . " pour date('Y') qui indique l'année en cours.<br>";
+echo date('D') . " pour date('D') qui indique le jour en 3 lettres.<br>";
+echo date('d') . " pour date('d') qui indique le num du jour dans le mois<br>";
+echo date('D d M Y');
 
 //Fonctions perso
-echo "Fonctions personnalisées:<br><br>";
+echo "<br><br>Fonctions personnalisées:<br><br>";
 
 function direBonjour($nom){
     echo "Bonjour " . $nom;
@@ -60,7 +65,7 @@ $minute = date('i');
 // Maintenant on peut afficher ce qu'on a recueilli
 echo 'Bonjour ! Nous sommes le ' . $jour . '/' . $mois . '/' . $annee . ' et il est ' . $heure. ' h ' . $minute;
 
-echo "<br><br>Voir les fonctions session_start() et setcookie()<br>qui envoient des header toutes seules...";
+echo "<br><br>Voir les fonctions session_start() et setcookie()<br>";
 ?>
     <?php require_once("footer.php"); ?>
     </body>
