@@ -1,5 +1,5 @@
 <?php
-require_once('PDOConnect.php');
+require_once('PDOConnect.php'); // on inclut le fichier de connexion PDOConnect.php en premier lieu, afin de sécuriser un minimum l'acces BDD et de ne pas avoir a refaire la connexion a chaque itération du besoin
 
 $response = $bdd->query('SELECT * FROM jeux_video');
 $data = $response->fetch();
