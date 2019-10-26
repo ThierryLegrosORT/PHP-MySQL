@@ -1,4 +1,9 @@
 <?php
+require_once('header.php');
+require_once('menu.php');
+    ?>
+    <br>Page requete simple (2) <a href="/request2.php">ICI</a><br>
+    <?php
 require_once('PDOConnect.php'); // on inclut le fichier de connexion PDOConnect.php en premier lieu, afin de sécuriser un minimum l'acces BDD et de ne pas avoir a refaire la connexion a chaque itération du besoin
 
 $response = $bdd->query('SELECT * FROM jeux_video');
@@ -16,3 +21,4 @@ while($data = $response->fetch()){
 }
 
 $response->closeCursor(); // termine la requete et la clos. Evite les problemes à la requete suivante
+require_once('footer.php');

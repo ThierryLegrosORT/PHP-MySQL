@@ -29,6 +29,8 @@
                     <li><a href="/variables_superglobales.php">Superglobales</a></li>
                     <li><a href="/session.php">Sessions & Cookies</a></li>
                     <li><a href="/persistance_data_file_chmod.php">Persistance dans un fichier avec CHMOD</a></li>
+                    <li><a href="/request1.php">Requêtes simples</a></li>
+                    <li><a href="/prep_req.php">Requêtes préparées</a></li>
                 </ul>
             </li>
     

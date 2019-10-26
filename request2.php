@@ -1,4 +1,6 @@
 <?php
+require_once('header.php');
+require_once('menu.php');
 require_once('PDOConnect.php');
 
 // $response = $bdd->query('SELECT nom, id FROM jeux_video');
@@ -15,3 +17,4 @@ while($data = $response->fetch()){
 }
 
 $response->closeCursor();
+require_once('footer.php');
