@@ -15,7 +15,7 @@
         <ul>
             <li class="tp"><a href="#">MES TP:</a></li>
     
-            <li class="menu-php"><a href="#">PHP</a>
+            <li class="menu-php"><a href="/">PHP</a>
                 <ul class="submenu">
                     <li><a href="/">Accueil</a></li>
                     <li><a href="/test.php">Les variables</a></li>
@@ -31,6 +31,7 @@
                     <li><a href="/persistance_data_file_chmod.php">Persistance dans un fichier avec CHMOD</a></li>
                     <li><a href="/request1.php">Requêtes simples</a></li>
                     <li><a href="/prep_req.php">Requêtes préparées</a></li>
+                    <li><a href="/insert_form.php">Insert into</a></li>
                 </ul>
             </li>
     
@@ -48,18 +49,3 @@
 </body>
 
 </html>
-<!-- <nav id="menu">
-    <div class="elements_menu">
-        <h3>Menu:</h3>
-        <ul style="list-style: none; display: block;">
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/test.php">Les variables</a></li>
-            <li><a href="/test2.php">Les conditions</a></li>
-            <li><a href="/boucles.php">Les boucles</a></li>
-            <li><a href="/tableaux.php">Les tableaux</a></li>
-            <li><a href="/fonctions.php">Les fonctions</a></li>
-            <li><a href="/transmettredata.php">Transmettre des données</a></li>
-    
-        </ul>
-    </div>
-</nav> -->

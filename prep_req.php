@@ -16,7 +16,7 @@
     <label for="possesseur">Nom: </label>
     <input type="text" name="possesseur"><br>
     <label for="prix_max">Prix Max. </label>
-    <input type="number" name="prix_max">
+    <input type="number" name="prix_max" value="99">
     <input type="submit" value="valider">
 </form>
 
