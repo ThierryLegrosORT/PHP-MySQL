@@ -19,6 +19,14 @@
     <input type="number" name="prix_max" value="99">
     <input type="submit" value="valider">
 </form>
+<textarea cols="55" rows="10">
 
+    $vars = array('user', 'name', 'lastname', 'street', 'postalCode', 'etc');<br>
+    foreach($vars as $var){<br>
+      if (isset($_POST[$var])) $$var = $_POST[$var];<br>
+    }<br><br>
+    
+    A TESTER AFIN DE CREER LES VARIABLES AUTO !!!
+</textarea>
 </body>
 </html>
