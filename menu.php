@@ -32,6 +32,7 @@
                     <li><a href="/request1.php">Requêtes simples</a></li>
                     <li><a href="/prep_req.php">Requêtes préparées</a></li>
                     <li><a href="/insert_form.php">Insert into</a></li>
+                    <li><a href="/update_form.php">Update titre</a></li>
                 </ul>
             </li>
     

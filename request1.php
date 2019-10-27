@@ -7,12 +7,12 @@ require_once('menu.php');
 require_once('PDOConnect.php'); // on inclut le fichier de connexion PDOConnect.php en premier lieu, afin de sécuriser un minimum l'acces BDD et de ne pas avoir a refaire la connexion a chaque itération du besoin
 
 $response = $bdd->query('SELECT * FROM jeux_video');
-$data = $response->fetch();
+
 
 while($data = $response->fetch()){
     ?>
     <p>
-        <strong>Jeu:</strong> <?php echo $data['nom']; ?><br>
+        <strong>Jeu:</strong> <?php echo $data['ID'] . ' : ' . $data['nom']; ?><br>
         Le possesseur de ce jeu est: <?php echo $data['possesseur']; ?>, et il le vend à <?php echo $data['prix']; ?> euro. <br>
         Ce jeu fonctionne sur <?php echo $data['console']; ?> et on peut y jouer à <?php echo $data['nbre_joueurs_max']; ?> au maximum. <br>
         <?php echo $data['possesseur']; ?> a laissé ces commentaires sur <?php echo $data['nom']; ?> : <em><?php echo $data['commentaires']; ?></em>
