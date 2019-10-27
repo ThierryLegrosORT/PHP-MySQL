@@ -9,3 +9,7 @@ li.superglobales{
     color: blueviolet;
     margin-top: 10px;
 }
+.minichat{
+    border: 1px solid black;
+    width: 33%;
+}

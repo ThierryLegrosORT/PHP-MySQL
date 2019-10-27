@@ -34,6 +34,7 @@
                     <li><a href="/insert_form.php">Insert into</a></li>
                     <li><a href="/update_form.php">Update titre</a></li>
                     <li><a href="/delete_form.php">Delete titre</a></li>
+                    <li><a href="/minichat_form.php">Minichat</a></li>
                 </ul>
             </li>
     

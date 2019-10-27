@@ -23,14 +23,15 @@ require_once('menu.php');
 
     <?php
     require_once('PDOConnect.php');
-    $response = $bdd->query('SELECT pseudo, message FROM minichat ORDER BY id DESC limit 0, 10');
+    $response = $bdd->query('SELECT UPPER(pseudo) AS pseudo_maj, message FROM minichat ORDER BY id DESC limit 0, 10');
     while ($data = $response->fetch()) {
-        $pseudo = htmlspecialchars($data['pseudo']);
+        $pseudo = htmlspecialchars($data['pseudo_maj']);
         $message = htmlspecialchars($data['message']);
         ?>
+        <div class="minichat">
         <p>
             <?php echo '<strong>' . $pseudo . '</strong>: ' . $message; ?><br>
-        </p>
+        </p></div>
     <?php
     }
     $response->closeCursor();
