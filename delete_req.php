@@ -5,7 +5,7 @@ require_once('PDOConnect.php');
 
 $title = htmlspecialchars($_POST['nom']);
 
-$req = $bdd->prepare('DELETE FROM jeux_video WHERE nom= :title');
+$req = $bdd->prepare('DELETE FROM jeux_video WHERE nom= :title') or die(print_r($bdd->errorInfo())); //gestion de l'affichage d'erreur MySQL depuis PHP
 $req->execute(array(
     'title' => $title
 ));
