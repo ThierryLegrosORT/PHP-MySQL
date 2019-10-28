@@ -37,15 +37,16 @@
                     <li><a href="/minichat_form.php">Minichat</a></li>
                 </ul>
             </li>
-    
+            
             <li class="creations"><a href="#">MES CREATIONS:</a></li>
             <li class="menu-contact"><a href="#">Contact</a>
-                <ul class="submenu">
-                    <li><a href="https://www.linkedin.com/in/thierry-legros-7ab3a8b3/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/thierrylegrosort" target="_blank">GitHub</a></li>
-                    <li><a href="#">CV</a></li>
-                </ul>
-            </li>
+            <ul class="submenu">
+                <li><a href="https://www.linkedin.com/in/thierry-legros-7ab3a8b3/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/thierrylegrosort" target="_blank">GitHub</a></li>
+                <li><a href="#">CV</a></li>
+            </ul>
+        </li>
+        <li><a href="/blog.php">Blog</a></li>
         </ul>
     </nav>
 
