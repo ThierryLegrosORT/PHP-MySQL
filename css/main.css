@@ -22,3 +22,11 @@ li.superglobales{
 .msg_box{
     border-bottom: 1px dashed gray;
 }
+.heure{
+    font-size: 0.7em;
+    border-right: 1px dotted grey;
+    font-style: italic;
+}
+.pseudo{
+    font-weight: bold;
+}

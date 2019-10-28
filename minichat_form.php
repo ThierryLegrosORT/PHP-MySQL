@@ -37,7 +37,7 @@ require_once('menu.php');
             $date_ajout = $data['heure_ajout'];
             ?>
             <p class="msg_box">
-                <?php echo $date_ajout . ': <strong>' . $pseudo . '</strong>: ' . $message; ?><br>
+                <?php echo '<span class="heure">' . $date_ajout . '</span> <span class="pseudo">' . $pseudo . '</span>: ' . $message; ?><br>
             </p>
         <?php
         }
