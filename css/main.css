@@ -30,3 +30,10 @@ li.superglobales{
 .pseudo{
     font-weight: bold;
 }
+.separator_comment{
+    border-bottom: 1px dashed black;
+    width: 25%;
+}
+h4{
+    text-decoration: underline;
+}

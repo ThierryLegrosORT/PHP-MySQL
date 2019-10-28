@@ -29,18 +29,27 @@ $req->closeCursor();
 
 $req = $bdd->prepare('SELECT author, content, DATE_FORMAT(date_ajout, "%d/%m/%y %Hh%i") AS date_comm FROM blog_comment WHERE id_billet=? ORDER BY date_ajout');
 $req->execute(array($_GET['billet']));
-while($data = $req->fetch()){
+while ($data = $req->fetch()) {
     $author_comm = htmlspecialchars($data['author']);
     $heure_comm = $data['date_comm'];
     $content_comm = htmlspecialchars($data['content']);
     ?>
-<p>
-    Par <?php echo $author_comm; ?> le <em><?php echo $heure_comm; ?></em>
-</p>
-<p>
-    <?php echo $content_comm; ?>
-</p>
+    <div class="separator_comment">
+
+        <p>
+            Par <?php echo $author_comm; ?> le <em><?php echo $heure_comm; ?></em>
+        </p>
+        <p>
+            <?php echo $content_comm; ?><br>
+        </p>
+    </div>
 <?php
 }
 $req->closeCursor();
+?>
+<br>
+<em>
+    <a href="javascript:history.back()">Retour blog</a>
+</em>
+<?php
 require_once('footer.php');
