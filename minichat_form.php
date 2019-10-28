@@ -23,14 +23,15 @@ require_once('menu.php');
 
     <?php
     require_once('PDOConnect.php');
-    $response = $bdd->query('SELECT UPPER(pseudo) AS pseudo_maj, message FROM minichat ORDER BY id DESC limit 0, 10');
+    $response = $bdd->query('SELECT UPPER(pseudo) AS pseudo_maj, message, DATE_FORMAT(date_ajout, "%d/%m/%y %Hh%i") as heure_ajout FROM minichat ORDER BY id DESC limit 0, 10');
     while ($data = $response->fetch()) {
         $pseudo = htmlspecialchars($data['pseudo_maj']);
         $message = htmlspecialchars($data['message']);
+        $date_ajout = $data['heure_ajout'];
         ?>
         <div class="minichat">
         <p>
-            <?php echo '<strong>' . $pseudo . '</strong>: ' . $message; ?><br>
+            <?php echo $date_ajout . ': <strong>' . $pseudo . '</strong>: ' . $message; ?><br>
         </p></div>
     <?php
     }
