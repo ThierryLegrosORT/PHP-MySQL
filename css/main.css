@@ -12,4 +12,13 @@ li.superglobales{
 .minichat{
     border: 1px solid black;
     width: 33%;
+    max-height: 300px;
+    overflow-y: scroll;
+    padding-left: 3px;
+}
+.formulaire_chat{
+    width: 33%;
+}
+.msg_box{
+    border-bottom: 1px dashed gray;
 }
