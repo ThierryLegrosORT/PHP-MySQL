@@ -47,6 +47,16 @@ while ($data = $req->fetch()) {
 }
 $req->closeCursor();
 ?>
+
+<div class="add_comment">
+    <form action="blog_add_comment.php" method="post">
+        <label for="pseudo">Votre pseudo: </label>
+        <input type="text" name="pseudo" minlength="4" required> 4 car. min.<br>
+        <label for="comment">Votre message: </label>
+        <textarea name="comment" cols="30" rows="4" minlength="3" required></textarea>
+        <input type="submit" value="Envoyer">
+    </form>
+</div>
 <br>
 <em>
     <a href="javascript:history.back()">Retour blog</a>
