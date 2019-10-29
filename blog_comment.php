@@ -10,18 +10,29 @@ $title = htmlspecialchars($data['title']);
 $author = htmlspecialchars($data['author']);
 $content = htmlspecialchars($data['content']);
 $date = $data['create_date'];
+$billet = $data['id'];
 ?>
 
 <div class="news">
     <h3>
         <?php echo $title; ?>
-        <em>le <?php echo $date; ?></em> par <?php echo $author; ?>
     </h3>
+    <em>le <?php echo $date; ?></em> par <?php echo $author; ?>
     <p>
         <?php
         echo $content;
         ?>
     </p>
+</div>
+<div class="add_comment">
+    <form action="blog_add_comment.php?billet=<?php echo $billet; ?>" method="post">
+        <label for="pseudo">Votre pseudo: </label>
+        <input type="text" name="pseudo" minlength="4" required> 4 car. min.<br>
+        <label for="comment">Votre message: </label>
+        <textarea name="comment" cols="30" rows="4" minlength="3" required></textarea>
+        <input type="hidden" name="billet" value="<?php $_GET['billet'] ?>">
+        <input type="submit" value="Envoyer">
+    </form>
 </div>
 <h4>Commentaires:</h4>
 <?php
@@ -45,21 +56,12 @@ while ($data = $req->fetch()) {
     </div>
 <?php
 }
-$req->closeCursor();
 ?>
 
-<div class="add_comment">
-    <form action="blog_add_comment.php" method="post">
-        <label for="pseudo">Votre pseudo: </label>
-        <input type="text" name="pseudo" minlength="4" required> 4 car. min.<br>
-        <label for="comment">Votre message: </label>
-        <textarea name="comment" cols="30" rows="4" minlength="3" required></textarea>
-        <input type="submit" value="Envoyer">
-    </form>
-</div>
 <br>
 <em>
-    <a href="javascript:history.back()">Retour blog</a>
+    <a href="blog.php">Retour blog</a>
 </em>
 <?php
+$req->closeCursor();
 require_once('footer.php');
