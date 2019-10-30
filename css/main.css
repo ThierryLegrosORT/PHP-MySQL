@@ -26,14 +26,25 @@ li.superglobales{
     font-size: 0.7em;
     border-right: 1px dotted grey;
     font-style: italic;
+    display: flex;
+    align-items: center;
 }
 .pseudo{
     font-weight: bold;
 }
 .separator_comment{
     border-bottom: 1px dashed black;
-    width: 25%;
+    /* width: 25%; */
 }
 h4{
     text-decoration: underline;
+}
+.commentaires_add_view{
+    display:flex;
+    flex-direction: row;
+}
+.comm{
+    margin-right: 50px;
+    border: 1px solid black;
+    padding: 0 15px 15px 15px;
 }
