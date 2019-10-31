@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/menu.css">
-    
+
 </head>
 
 <body>
     <nav>
         <ul>
             <li class="tp"><a href="#">MES TP:</a></li>
-    
+
             <li class="menu-php"><a href="/">PHP</a>
                 <ul class="submenu">
                     <li><a href="/">Accueil</a></li>
@@ -34,19 +34,25 @@
                     <li><a href="/insert_form.php">Insert into</a></li>
                     <li><a href="/update_form.php">Update titre</a></li>
                     <li><a href="/delete_form.php">Delete titre</a></li>
-                    <li><a href="/minichat_form.php">Minichat</a></li>
                 </ul>
             </li>
-            
+
             <li class="creations"><a href="#">MES CREATIONS:</a></li>
             <li class="menu-contact"><a href="#">Contact</a>
-            <ul class="submenu">
-                <li><a href="https://www.linkedin.com/in/thierry-legros-7ab3a8b3/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/thierrylegrosort" target="_blank">GitHub</a></li>
-                <li><a href="#">CV</a></li>
-            </ul>
-        </li>
-        <li><a href="/blog.php">Blog</a></li>
+                <ul class="submenu">
+                    <li><a href="https://www.linkedin.com/in/thierry-legros-7ab3a8b3/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/thierrylegrosort" target="_blank">GitHub</a></li>
+                    <li><a href="#">CV</a></li>
+                </ul>
+            </li>
+            <li><a href="/blog.php">Blog</a></li>
+            <li><a href="/minichat_form.php">Minichat</a></li>
+            <li><a href="#">images PHP</a>
+        <ul class="submenu">
+        <li><a href="/gdpngcreate.php">Création d'images PHP</a></li>
+        <li><a href="/testgd.php">Utilisation d'une image.php</a></li>
+        <li><a href="/GDcopyright.php">Fusion d'images / copyright</a></li>
+        </ul></li>
         </ul>
     </nav>
 
