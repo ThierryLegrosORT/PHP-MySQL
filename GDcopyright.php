@@ -16,7 +16,7 @@ $destination_x = $largeur_destination - $largeur_source;
 $destination_y =  $hauteur_destination - $hauteur_source;
 
 // On met le logo (source) dans l'image de destination (la photo)
-imagecopymerge($destination, $source, $destination_x, $destination_y, 0, 0, $largeur_source, $hauteur_source, 60);
+imagecopymerge($destination, $source, $destination_x, $destination_y, 0, 0, $largeur_source, $hauteur_source, 40);
 
 // On affiche l'image de destination qui a été fusionnée avec le logo
 imagejpeg($destination);
