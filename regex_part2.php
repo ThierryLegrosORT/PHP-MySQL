@@ -35,16 +35,16 @@ echo "&lt;br&gt;An: " . $annee;
         <input type="submit" value="Envoyer">
     </form>
 <ul><h3>Les classes abrégées</h3>
-    <li>\d</li> indique un chiffre, équivaut à [0-9]
-    <li>\D</li> indique que ce n'est pas un chiffre, &quivaut à [^0-9]
-    <li>\w</li> caractère alphanumérique ou tiret, équivaut à [a-zA-Z0-9_]
-    <li>\W</li> indique que ce n'est pas un mot, équivaut à [^a-zA-Z0-9_]
-    <li>\t</li> indique une tabulation
-    <li>\n</li> indique une nouvelle ligne
-    <li>\r</li> indique un retour chariot
-    <li>\s</li> indique un espace blanc
-    <li>\S</li> indique que ce n'est pas un espace blanc (\t \n \r)
-    <li>.</li> indique n'importe quel caractère
+    <li><b>\d</b></li> indique un chiffre, équivaut à [0-9]
+    <li><b>\D</b></li> indique que ce n'est pas un chiffre, &quivaut à [^0-9]
+    <li><b>\w</b></li> caractère alphanumérique ou tiret, équivaut à [a-zA-Z0-9_]
+    <li><b>\W</b></li> indique que ce n'est pas un mot, équivaut à [^a-zA-Z0-9_]
+    <li><b>\t</b></li> indique une tabulation
+    <li><b>\n</b></li> indique une nouvelle ligne
+    <li><b>\r</b></li> indique un retour chariot
+    <li><b>\s</b></li> indique un espace blanc
+    <li><b>\S</b></li> indique que ce n'est pas un espace blanc (\t \n \r)
+    <li><b>.</b></li> indique n'importe quel caractère
 </ul>
 </body>
 </html>
