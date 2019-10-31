@@ -48,10 +48,16 @@
             <li><a href="/blog.php">Blog</a></li>
             <li><a href="/minichat_form.php">Minichat</a></li>
             <li><a href="#">images PHP</a>
+                <ul class="submenu">
+                    <li><a href="/gdpngcreate.php">Création d'images PHP</a></li>
+                    <li><a href="/testgd.php">Utilisation d'une image.php</a></li>
+                    <li><a href="/GDcopyright.php">Fusion d'images / copyright</a></li>
+                </ul>
+            </li>
+            <li><a href="#">RegEx</a>
         <ul class="submenu">
-        <li><a href="/gdpngcreate.php">Création d'images PHP</a></li>
-        <li><a href="/testgd.php">Utilisation d'une image.php</a></li>
-        <li><a href="/GDcopyright.php">Fusion d'images / copyright</a></li>
+            <li><a href="/regex_part1.php">RegEx - Part.I</a></li>
+            <li><a href="/regex_part2.php">RegEx - Part.II</a></li>
         </ul></li>
         </ul>
     </nav>
