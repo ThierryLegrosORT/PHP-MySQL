@@ -74,6 +74,7 @@ nav li:hover .submenu {
   font-size: 13px;
   color: #222538;
   width: 270px;
+  /* width: auto; */
 }
 
 .submenu li:hover a {

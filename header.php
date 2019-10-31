@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Cours PHP / MySQL avec OpenClassRoom</h1>
+    <h1 class="header">Cours PHP / MySQL avec OpenClassRoom</h1>
     
     
 </body>
