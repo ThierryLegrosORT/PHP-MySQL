@@ -47,10 +47,7 @@ echo "&lt;br&gt;An: " . $annee;
     <li>.</li> indique n'importe quel caractère
 </ul>
 </body>
-
 </html>
-
-
 
 <?php
 require_once('footer.php');

@@ -16,13 +16,14 @@
     <p>Une variable superglobale se différencie par le '_' en début et son nom en MAJUSCULES.<br />
         ex: $_GET, $_POST, $_FILES, etc... </p>
     <p>Pour afficher son contenu, on peut utiliser le code suivant:<br />
-        <textarea rows="6" cols="35">
         <pre>
+        &lt;pre&gt;
             &lt;?php
             print_r($_GET);
             ?&gt;
+        &lt;/pre&gt;
         </pre>
-        </textarea><br />
+        <br />
         Ce qui donnera un retour de type:<br />
         <pre>
             <?php

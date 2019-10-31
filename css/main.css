@@ -52,3 +52,8 @@ h4{
     border: 1px solid black;
     padding: 0 15px 15px 15px;
 }
+pre{
+    max-width: 650px;
+    background-color: #000;
+    color: azure;
+}

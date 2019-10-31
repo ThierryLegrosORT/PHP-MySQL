@@ -3,12 +3,14 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <?php
     require('header.php');
@@ -43,24 +45,25 @@ session_start();
         Le paramètre TRUE active la protection httpOnly et sécurise à minima votre cookie contre l'utilisation de scripts JavaScript. <br>
         L'utilisation de <strong>htmlspecialchars</strong> reste tout de même nécessaire.
     </p>
-    <p><h3>Rappel:</h3>
+    <p>
+        <h3>Rappel:</h3>
         setcookie, tout comme session_start, est à déclarer en premier lieu, soit avant le début du code HTML. <br>
-        <fieldset>
-
-            ex: <br>
-            &lt;?php <br>
-            setcookie('nom', 'Your Name', time() + 3*24*3600, null, null, false, true); <br>
-            ?&gt; <br>
-            &lt;html&gt; <br>
-            &lt;body&gt; <br>
+        <pre>
+            ex:
+            &lt;?php
+                setcookie('nom', 'Your Name', time() + 3*24*3600, null, null, false, true);
+            ?&gt;
+            &lt;html&gt;
+            &lt;body&gt;
             ...
-        </fieldset>
+</pre>
     </p>
     <p>
         <h3>Rappel d'un cookie</h3>
         Pour afficher un cookie, il suffit d'insérer &lt;?php echo $_COOKIE['nom']; ?&gt; à l'endroit désiré.
     </p>
 </body>
+
 </html>
 <?php
 require('footer.php');
