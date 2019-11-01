@@ -57,3 +57,20 @@ pre{
     background-color: #000;
     color: azure;
 }
+.register_form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 30%;
+    margin: auto;
+}
+.register_success{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.register_success>p>em{
+    font-size: 1em;
+    font-weight: normal;
+}
