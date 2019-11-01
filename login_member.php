@@ -9,7 +9,7 @@ require_once('menu.php');
         <label for="password">Mot de passe: </label>
         <input type="password" name="password"><br>
         <label for="autoconnect">Se connecter automatiquement: </label>
-        <input type="checkbox" name="autoconnect"><br>
+        <input type="checkbox" name="autoconnect" disabled title="En cours de dev"><br>
         <input type="submit" value="Envoyer">
     </form>
 </div>

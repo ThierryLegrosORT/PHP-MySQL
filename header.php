@@ -1,3 +1,8 @@
+<?php
+if(isset($_SESSION['id']) AND isset($_SESSION['pseudo'])){
+    echo $_SESSION['pseudo'];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

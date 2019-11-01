@@ -55,10 +55,20 @@
                 </ul>
             </li>
             <li><a href="#">RegEx</a>
-        <ul class="submenu">
-            <li><a href="/regex_part1.php">RegEx - Part.I</a></li>
-            <li><a href="/regex_part2.php">RegEx - Part.II</a></li>
-        </ul></li>
+                <ul class="submenu">
+                    <li><a href="/regex_part1.php">RegEx - Part.I</a></li>
+                    <li><a href="/regex_part2.php">RegEx - Part.II</a></li>
+                </ul>
+            </li>
+            <!-- <li>
+                <a href="/logout.php">Déconnexion</a>
+            </li> -->
+            <li>
+                <a href="/login_member.php">Connexion</a>
+            </li>
+            <li>
+                <a href="/htaccess.php">htaccess</a>
+            </li>
         </ul>
     </nav>
 

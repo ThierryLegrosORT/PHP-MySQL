@@ -1,10 +1,12 @@
 <?php
 require_once('header.php');
 require_once('menu.php');
-require_once('PDOConnect.php');
-?>
 
+session_abort();
+// session_start();
+// $_SESSION = array();
+// session_destroy();
 
+echo "Vous êtes à présent déconnecté";
 
-<?php
 require_once('footer.php');

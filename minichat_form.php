@@ -37,7 +37,6 @@ require_once('menu.php');
         <div class="formulaire_chat">
             <form action="minichat.php" method="post">
                 <input type="text" name="pseudo" minlength="4" value="<?php echo $_SESSION['pseudo']; ?>" placeholder="Pseudo" size="7">
-                <!-- <textarea name="message" cols="50" rows="2" minlength="3" required placeholder="Message..."></textarea> -->
                 <input name="message" size="35" minlength="3" required placeholder="Message...">
                 <input type="submit" value="Envoyer">
             </form>
