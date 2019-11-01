@@ -1,7 +1,6 @@
 <?php
 require_once('header.php');
 require_once('menu.php');
-require_once('PDOConnect.php');
 ?>
 <form action="register_func.php" method="post" class="register_form">
     <label>Pseudo: 
