@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('header.php');
 require_once('menu.php');
 require_once('PDOConnect.php');
@@ -53,8 +54,6 @@ $billet = $data['id'];
     </div>
     <div class="add_comment">
         <form action="blog_add_comment.php?billet=<?php echo $billet; ?>" method="post">
-            <label for="pseudo">Votre pseudo: </label>
-            <input type="text" name="pseudo" minlength="4" required> 4 car. min.<br>
             <label for="comment">Votre message: </label>
             <textarea name="comment" cols="30" rows="4" minlength="3" required></textarea>
             <input type="hidden" name="billet" value="<?php $_GET['billet'] ?>">

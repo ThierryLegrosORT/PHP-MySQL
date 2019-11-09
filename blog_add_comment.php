@@ -1,7 +1,9 @@
 <?php
+session_start();
 require_once('PDOConnect.php');
 
-$pseudo = htmlspecialchars($_POST['pseudo']);
+// $pseudo = htmlspecialchars($_POST['pseudo']);
+$pseudo = $_SESSION['pseudo'];
 $message = htmlspecialchars($_POST['comment']);
 $billet = $_GET['billet'];
 

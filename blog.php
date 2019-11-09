@@ -1,5 +1,6 @@
 <?php
 require_once('header.php');
+session_start();
 require_once('menu.php');
 require_once('PDOConnect.php');
 ?>
